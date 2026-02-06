@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScrapingTool</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 ScrapingTool</h1>
+      <p class="subtitle">Discover sitemaps, feeds & login pages</p>
+    </header>
+    
+    <main>
+      <div class="section">
+        <button id="discoverFeedsBtn" class="btn btn-discover">
+          <span class="icon">🗺️</span> Discover Sitemaps & Feeds
+        </button>
+      </div>
+      
+      <div class="section">
+        <button id="discoverLoginBtn" class="btn btn-login">
+          <span class="icon">🔐</span> Discover Login Pages
+        </button>
+      </div>
+      
+      <div id="feedResults" class="feed-results hidden">
+        <h3>Sitemaps (<span id="sitemapCount">0</span>)</h3>
+        <div id="sitemapList" class="feed-list"></div>
+        
+        <h3>RSS Feeds (<span id="feedCount">0</span>)</h3>
+        <div id="feedList" class="feed-list"></div>
+      </div>
+      
+      <div id="loginResults" class="login-results hidden">
+        <h3>Login Pages (<span id="loginCount">0</span>)</h3>
+        <div id="loginList" class="feed-list"></div>
+      </div>
+      
+      <div id="status" class="status hidden"></div>
+    </main>
+    
+    <footer>
+      <button id="clearBtn" class="btn btn-small">Clear</button>
+      <button id="exportBtn" class="btn btn-small">Export JSON</button>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.zip
+*.xpi
+web-ext-artifacts/
+
+# Temporary files
+*.tmp
+*.log
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Git
+.git/
