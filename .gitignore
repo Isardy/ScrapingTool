@@ -9,6 +9,9 @@ Thumbs.db
 *.swo
 *~
 
+# GitHub
+.github/
+
 # Build artifacts
 *.zip
 *.xpi
